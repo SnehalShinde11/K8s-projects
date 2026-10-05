@@ -1,0 +1,47 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+
+metadata:
+  name: kubernetes-web-app-rs
+
+  labels:
+    app: kubernetes-web-app
+    created-by: snehal
+
+spec:
+
+  replicas: 3
+
+  selector:
+    matchLabels:
+      app: kubernetes-web-app
+
+  template:
+
+    metadata:
+
+      labels:
+        app: kubernetes-web-app
+        version: "1.0"
+
+    spec:
+
+      containers:
+
+        - name: kubernetes-web-app
+
+          image: snehalshinde11/kubernetes-web-app:1.0
+
+          imagePullPolicy: Always
+
+          ports:
+            - containerPort: 80
+
+          resources:
+            requests:
+              cpu: "50m"
+              memory: "32Mi"
+
+            limits:
+              cpu: "200m"
+              memory: "128Mi"
