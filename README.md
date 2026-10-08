@@ -954,6 +954,6 @@ The final setup provides a scalable and manageable Kubernetes application with *
 | Detail | Information |
 |---|---|
 | Name | Snehal Shinde |
-| Project | Project 3.1 |
-| Assignment | Deploying Scalable Applications using ReplicaSets and Deployments |
-| Docker Hub Repository | `snehalshinde11/kubernetes-web-app` |
+| Project 3.1 | Deploying Scalable Applications using ReplicaSets and Deployments — [README](README.md) |
+| Project 3.2 | Resource Management and Horizontal Pod Autoscaling in Kubernetes — [README](k8s/README-Project-3.2.md) |
+| Project 3.3 | Kubernetes Deployment with PV, ConfigMap, Secrets, and Services — [README](project-3.3-postgres/k8s/README-Project-3.3.md) |
